@@ -4,6 +4,14 @@ import stocklyImg from '@/assets/stockly.png';
 import fitnessImg from '@/assets/fitness-app.png';
 import spaceImg from '@/assets/space.png';
 import chatImg from '@/assets/chat-app.png';
+import issueTrackerImg from '@/assets/issue-tracker.png';
+import taskManagerImg from '@/assets/task-manager.png';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '@/components/ui/tooltip';
 
 interface Project {
   title: string;
@@ -35,6 +43,7 @@ const projects: Project[] = [
   {
     title: 'Task Management App',
     description: 'A modern, responsive task management dashboard. Create, edit, and delete tasks, organize by projects or categories, with responsive design and dark mode toggle.',
+    image: taskManagerImg,
     technologies: ['TypeScript', 'React', 'Vite', 'TailwindCSS'],
     liveUrl: 'https://task-manager-hfq5.onrender.com/',
     codeUrl: 'https://github.com/DIEGOHILLS/Task-deadline-manager.git',
@@ -60,6 +69,7 @@ const projects: Project[] = [
   {
     title: 'AI Issue Tracker',
     description: 'A React-based issue tracking system enhanced with AI capabilities. Automated AI summaries and intelligent fix suggestions powered by OpenAI GPT.',
+    image: issueTrackerImg,
     technologies: ['JavaScript', 'React', 'Vite', 'OpenAI API'],
     liveUrl: 'https://ai-issuetracker.onrender.com/',
     codeUrl: 'https://github.com/DIEGOHILLS/Ai-IssueTracker.git',
@@ -73,14 +83,18 @@ const Projects = () => {
   const visibleProjects = showAll ? projects : projects.filter((p) => !p.hidden);
 
   return (
-    <section id="projects" className="py-20 sm:py-24">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center text-foreground mb-12">
-          Featured Projects
-        </h2>
+    <TooltipProvider delayDuration={200}>
+      <section id="projects" className="py-20 sm:py-24">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center text-foreground mb-4">
+            Featured Projects
+          </h2>
+          <p className="text-center text-primary mb-12 text-sm font-medium animate-pulse">
+            ✨ New Java/Spring Boot projects coming soon ✨
+          </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
-          {visibleProjects.map((project, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+            {visibleProjects.map((project, index) => (
             <div
               key={project.title}
               className="group bg-card/50 backdrop-blur-sm border border-border rounded-2xl overflow-hidden hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300"
@@ -105,9 +119,16 @@ const Projects = () => {
               {/* Project Content */}
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-foreground mb-3">{project.title}</h3>
-                <p className="text-muted-foreground text-sm mb-4 line-clamp-3">
-                  {project.description}
-                </p>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <p className="text-muted-foreground text-sm mb-4 line-clamp-3 cursor-help">
+                      {project.description}
+                    </p>
+                  </TooltipTrigger>
+                  <TooltipContent side="top" className="max-w-xs bg-card border-border text-foreground p-3">
+                    <p className="text-sm">{project.description}</p>
+                  </TooltipContent>
+                </Tooltip>
 
                 {/* Tech Tags */}
                 <div className="flex flex-wrap gap-2 mb-4">
@@ -162,6 +183,7 @@ const Projects = () => {
         </div>
       </div>
     </section>
+    </TooltipProvider>
   );
 };
 
