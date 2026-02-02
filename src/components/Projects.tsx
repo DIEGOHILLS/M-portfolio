@@ -4,7 +4,7 @@ import stocklyImg from '@/assets/stockly.png';
 import fitnessImg from '@/assets/fitness-app.png';
 import spaceImg from '@/assets/space.png';
 import chatImg from '@/assets/chat-app.png';
-import issueTrackerImg from '@/assets/issue-tracker.png';
+import movieReviewsImg from '@/assets/movie-reviews.png';
 import taskManagerImg from '@/assets/task-manager.png';
 import {
   Tooltip,
@@ -67,12 +67,12 @@ const projects: Project[] = [
     hidden: true,
   },
   {
-    title: 'AI Issue Tracker',
-    description: 'A React-based issue tracking system enhanced with AI capabilities. Automated AI summaries and intelligent fix suggestions powered by OpenAI GPT.',
-    image: issueTrackerImg,
-    technologies: ['JavaScript', 'React', 'Vite', 'OpenAI API'],
-    liveUrl: 'https://ai-issuetracker.onrender.com/',
-    codeUrl: 'https://github.com/DIEGOHILLS/Ai-IssueTracker.git',
+    title: 'Movie Reviews App',
+    description: 'Full-stack movie review application with a React frontend and Spring Boot REST API, deployed using Docker with MongoDB Atlas for persistent storage.',
+    image: movieReviewsImg,
+    technologies: ['React', 'Spring Boot (Java)', 'MongoDB', 'Docker'],
+    liveUrl: 'https://movie-revview.netlify.app/',
+    codeUrl: 'https://github.com/DIEGOHILLS/movie-reviews.git',
     hidden: true,
   },
 ];
