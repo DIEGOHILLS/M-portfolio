@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 import stocklyImg from '@/assets/stockly.png';
 import fitnessImg from '@/assets/fitness-app.png';
-import spaceImg from '@/assets/space.png';
 import chatImg from '@/assets/chat-app.png';
+import blogPlatformImg from '@/assets/blog-platform.png';
 import movieReviewsImg from '@/assets/movie-reviews.png';
 import taskManagerImg from '@/assets/task-manager.png';
 import {
@@ -33,12 +33,12 @@ const projects: Project[] = [
     codeUrl: 'https://github.com/DIEGOHILLS/Stockly.git',
   },
   {
-    title: 'Fitness App',
-    description: 'A modern fitness exercise discovery web application. Explore over 1000+ exercises, filter by muscle groups, view detailed information, watch YouTube demonstrations, and discover similar exercises.',
-    image: fitnessImg,
-    technologies: ['React', 'Material UI', 'RapidAPI', 'Axios'],
-    liveUrl: 'https://fitness-app-x819.vercel.app/',
-    codeUrl: 'https://github.com/DIEGOHILLS/Fitness_app.git',
+    title: 'Real-Time Chat Platform',
+    description: 'Scalable real-time MERN-stack messaging platform with end-to-end encryption, Authentication & Authorization with JWT, and real-time messaging with Socket.io.',
+    image: chatImg,
+    technologies: ['Node.js', 'Socket.io', 'React', 'MongoDB'],
+    liveUrl: 'http://chattabox-swcj.onrender.com/',
+    codeUrl: 'https://github.com/DIEGOHILLS/chat_app.git',
   },
   {
     title: 'Task Management App',
@@ -49,21 +49,10 @@ const projects: Project[] = [
     codeUrl: 'https://github.com/DIEGOHILLS/Task-deadline-manager.git',
   },
   {
-    title: 'Real-Time Chat Platform',
-    description: 'Scalable real-time MERN-stack messaging platform with end-to-end encryption, Authentication & Authorization with JWT, and real-time messaging with Socket.io.',
-    image: chatImg,
-    technologies: ['Node.js', 'Socket.io', 'React', 'MongoDB'],
-    liveUrl: 'http://chattabox-swcj.onrender.com/',
-    codeUrl: 'https://github.com/DIEGOHILLS/chat_app.git',
-    hidden: true,
-  },
-  {
-    title: 'Go-Space',
-    description: 'A beautiful, interactive space exploration website built with HTML, CSS, JavaScript, and Python Flask. Discover the solar system through engaging visualizations and quizzes.',
-    image: spaceImg,
-    technologies: ['JavaScript', 'Python', 'Flask', 'HTML', 'CSS'],
-    liveUrl: 'https://go-space.onrender.com/',
-    codeUrl: 'https://github.com/DIEGOHILLS/space_app.git',
+    title: 'Blog Platform',
+    description: 'Full-stack blog platform built with Spring Boot, React (TypeScript), and PostgreSQL. Features JWT authentication, draft/publish workflows, categories & tags, rich text editing, and independent cloud deployment of frontend and backend services.',
+    image: blogPlatformImg,
+    technologies: ['JWT', 'Spring Boot', 'Spring Security', 'JPA', 'PostgreSQL', 'React', 'TypeScript', 'Tailwind'],
     hidden: true,
   },
   {
