@@ -66,6 +66,15 @@ const projects: Project[] = [
     codeUrl: 'https://github.com/DIEGOHILLS/movie-reviews.git',
     hidden: true,
   },
+  {
+    title: 'Fitness App',
+    description: 'A modern fitness exercise discovery web application. Explore over 1000+ exercises, filter by muscle groups, view detailed information, watch YouTube demonstrations, and discover similar exercises.',
+    image: fitnessImg,
+    technologies: ['React', 'Material UI', 'RapidAPI', 'Axios'],
+    liveUrl: 'https://fitness-app-x819.vercel.app/',
+    codeUrl: 'https://github.com/DIEGOHILLS/Fitness_app.git',
+    hidden: true,
+  },
 ];
 
 const Projects = () => {
@@ -80,9 +89,6 @@ const Projects = () => {
           <h2 className="text-3xl sm:text-4xl font-bold text-center text-foreground mb-4">
             Featured Projects
           </h2>
-          <p className="text-center text-primary mb-12 text-sm font-medium animate-pulse">
-            ✨ New Java/Spring Boot projects coming soon ✨
-          </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
             {visibleProjects.map((project, index) => (
