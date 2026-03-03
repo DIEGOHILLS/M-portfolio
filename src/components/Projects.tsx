@@ -53,6 +53,8 @@ const projects: Project[] = [
     description: 'Full-stack blog platform built with Spring Boot, React (TypeScript), and PostgreSQL. Features JWT authentication, draft/publish workflows, categories & tags, rich text editing, and independent cloud deployment of frontend and backend services.',
     image: blogPlatformImg,
     technologies: ['JWT', 'Spring Boot', 'Spring Security', 'JPA', 'PostgreSQL', 'React', 'TypeScript', 'Tailwind'],
+    liveUrl: 'https://blog-platform-ylvh.onrender.com/',
+    codeUrl: 'https://github.com/DIEGOHILLS/blog-platform.git',
     hidden: true,
   },
   {
