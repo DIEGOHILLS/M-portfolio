@@ -1,6 +1,7 @@
 import SpaceBackground from '@/components/SpaceBackground';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
+import WhatIBring from '@/components/WhatIBring';
 import Projects from '@/components/Projects';
 import Experience from '@/components/Experience';
 import Skills from '@/components/Skills';
@@ -13,6 +14,7 @@ const Index = () => {
       <Navbar />
       <main>
         <Hero />
+        <WhatIBring />
         <Projects />
         <Experience />
         <Skills />

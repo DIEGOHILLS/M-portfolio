@@ -36,9 +36,18 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 sm:py-24">
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center text-foreground mb-12">
-          Get In Touch
-        </h2>
+        <div className="text-center mb-10">
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/15 border border-primary/30 text-primary text-sm font-medium mb-4">
+            <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+            Open to opportunities
+          </span>
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-3">
+            Get In Touch
+          </h2>
+          <p className="text-foreground/80 max-w-xl mx-auto">
+            I'm currently open to junior developer opportunities. Let's build something great together.
+          </p>
+        </div>
 
         <div className="bg-card/50 backdrop-blur-sm border border-border rounded-3xl p-8 sm:p-10 shadow-2xl">
           <h3 className="text-2xl font-semibold text-foreground mb-8 text-center">
@@ -79,7 +88,7 @@ const Contact = () => {
         </div>
 
         <p className="text-center text-muted-foreground mt-8 italic">
-          Feel free to reach out
+          Feel free to reach out — I typically respond within 24 hours.
         </p>
       </div>
     </section>
