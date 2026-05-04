@@ -129,20 +129,20 @@ const Projects = () => {
           Real, deployed full-stack applications — not just demos.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 mb-10">
           {visibleProjects.map((project, index) => (
             <article
               key={project.title}
-              className="group flex flex-col bg-card/60 backdrop-blur-sm border border-border rounded-2xl overflow-hidden hover:-translate-y-2 hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/15 transition-all duration-300"
+              className="group flex flex-col bg-card/60 backdrop-blur-sm border border-border rounded-2xl overflow-hidden transition-[transform,border-color,box-shadow] duration-300 ease-out will-change-transform hover:-translate-y-1 hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="h-48 bg-secondary/50 overflow-hidden relative">
+              <div className="h-44 sm:h-48 bg-secondary/50 overflow-hidden relative">
                 {project.image ? (
                   <img
                     src={project.image}
                     alt={`${project.title} screenshot`}
                     loading="lazy"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
                   />
                 ) : (
                   <div className="w-full h-full flex items-center justify-center text-muted-foreground">
@@ -157,13 +157,13 @@ const Projects = () => {
                 {project.subtitle && (
                   <p className="text-sm text-primary font-medium mb-2">{project.subtitle}</p>
                 )}
-                <p className="text-foreground/80 text-sm mb-4 leading-relaxed">
+                <p className="text-foreground/90 text-sm mb-4 leading-relaxed">
                   {project.description}
                 </p>
 
                 <ul className="space-y-1.5 mb-4">
                   {project.features.map((f) => (
-                    <li key={f} className="flex items-start gap-2 text-sm text-muted-foreground">
+                    <li key={f} className="flex items-start gap-2 text-sm text-foreground/80">
                       <Check className="w-4 h-4 mt-0.5 text-primary shrink-0" />
                       <span>{f}</span>
                     </li>
@@ -187,7 +187,7 @@ const Projects = () => {
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 text-sm text-foreground hover:text-primary transition-colors"
+                      className="inline-flex items-center gap-1.5 text-sm font-medium text-foreground hover:text-primary transition-colors duration-200"
                     >
                       <ExternalLink className="w-4 h-4" />
                       Live Demo
@@ -198,7 +198,7 @@ const Projects = () => {
                       href={project.codeUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 text-sm text-foreground hover:text-primary transition-colors"
+                      className="inline-flex items-center gap-1.5 text-sm font-medium text-foreground hover:text-primary transition-colors duration-200"
                     >
                       <Github className="w-4 h-4" />
                       Code
@@ -213,7 +213,7 @@ const Projects = () => {
         <div className="text-center">
           <button
             onClick={() => setShowAll(!showAll)}
-            className="px-8 py-3 bg-secondary/50 hover:bg-secondary border border-border rounded-full text-foreground font-medium transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+            className="px-8 py-3 bg-secondary/60 hover:bg-secondary border border-border hover:border-primary/40 rounded-full text-foreground font-medium transition-all duration-200 hover:-translate-y-0.5"
           >
             {showAll ? 'Show Less' : 'View All Projects'}
           </button>
