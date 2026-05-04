@@ -44,17 +44,17 @@ const Contact = () => {
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-3">
             Get In Touch
           </h2>
-          <p className="text-foreground/80 max-w-xl mx-auto">
+          <p className="text-foreground/90 max-w-xl mx-auto">
             I'm currently open to junior developer opportunities. Let's build something great together.
           </p>
         </div>
 
-        <div className="bg-card/50 backdrop-blur-sm border border-border rounded-3xl p-8 sm:p-10 shadow-2xl">
-          <h3 className="text-2xl font-semibold text-foreground mb-8 text-center">
+        <div className="bg-card/50 backdrop-blur-sm border border-border rounded-3xl p-6 sm:p-10 shadow-2xl">
+          <h3 className="text-xl sm:text-2xl font-semibold text-foreground mb-8 text-center">
             Contact Information
           </h3>
 
-          <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
+          <div className="flex flex-wrap justify-center gap-5 sm:gap-8">
             {contactItems.map((item) => (
               <div key={item.label} className="flex flex-col items-center group">
                 {item.href ? (
