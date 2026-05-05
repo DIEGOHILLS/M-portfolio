@@ -51,16 +51,19 @@ const Hero = () => {
         <p className="text-lg sm:text-2xl md:text-3xl font-semibold text-primary mb-5 sm:mb-6 animate-fade-in-up animation-delay-200">
           Full-Stack Developer
           <span className="block text-sm sm:text-lg text-foreground/90 font-normal mt-1">
-            Java Spring Boot · React · TypeScript · Docker
+            Java Spring Boot · React · TypeScript
           </span>
         </p>
 
         {/* Description */}
-        <p className="text-sm sm:text-lg text-foreground max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed animate-fade-in-up animation-delay-300 px-2">
-          6 production-deployed applications. 1 year shipping code in Agile teams.
-          Backend-focused with production experience in JWT authentication, REST APIs,
-          PostgreSQL, and containerized deployment. Built real-time systems, inventory
-          management tools, and content platforms used by actual users.
+        <p className="text-sm sm:text-lg text-foreground max-w-2xl mx-auto mb-6 sm:mb-8 leading-relaxed animate-fade-in-up animation-delay-300 px-2">
+          6 production apps. 1 year Agile team experience. JWT, REST APIs, PostgreSQL, Docker.
+          Real-time systems, inventory tools, content platforms shipped to actual users.
+        </p>
+
+        {/* Hiring CTA */}
+        <p className="text-sm sm:text-base text-primary font-medium mb-8 sm:mb-10 animate-fade-in-up animation-delay-350 px-2">
+          Hiring? I'm open to backend and full-stack roles.
         </p>
 
         {/* Social Links & CV Download */}
