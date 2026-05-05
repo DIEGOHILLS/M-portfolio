@@ -13,13 +13,27 @@ const navLinks = [
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
+
+      // Scroll spy: find the section currently in view
+      const offset = window.innerHeight * 0.35;
+      let current = 'home';
+      for (const { href } of navLinks) {
+        const id = href.slice(1);
+        const el = document.getElementById(id);
+        if (el && el.getBoundingClientRect().top <= offset) {
+          current = id;
+        }
+      }
+      setActiveSection(current);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -53,7 +67,11 @@ const Navbar = () => {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-foreground/80 hover:text-primary transition-colors font-medium"
+                    className={`transition-colors font-medium ${
+                      activeSection === link.href.slice(1)
+                        ? 'text-primary'
+                        : 'text-foreground/80 hover:text-primary'
+                    }`}
                   >
                     {link.label}
                   </a>
@@ -86,7 +104,11 @@ const Navbar = () => {
                 <a
                   href={link.href}
                   onClick={handleLinkClick}
-                  className="block px-6 py-3 text-foreground/80 hover:text-primary hover:bg-secondary/30 transition-colors font-medium"
+                  className={`block px-6 py-3 hover:bg-secondary/30 transition-colors font-medium ${
+                    activeSection === link.href.slice(1)
+                      ? 'text-primary'
+                      : 'text-foreground/80 hover:text-primary'
+                  }`}
                 >
                   {link.label}
                 </a>

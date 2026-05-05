@@ -1,25 +1,30 @@
-import { Rocket, Radio, Users, Server } from 'lucide-react';
+import { Rocket, Radio, Users, Server, Sparkles } from 'lucide-react';
 
 const items = [
   {
     icon: Rocket,
     title: 'Shipped Full-Stack Apps',
-    description: 'Built and deployed 3+ production full-stack applications end-to-end.',
+    description: 'Built and deployed 6 production applications end-to-end — not tutorials. 3 with Spring Boot backends, 3 with Node.js. All containerized with Docker.',
   },
   {
     icon: Radio,
     title: 'Real-Time Systems',
-    description: 'Hands-on experience with WebSockets and live, multi-user features.',
+    description: 'Production WebSocket experience: built multi-user chat with Socket.io, live UI updates, and JWT-secured connections. Handled concurrent connections and state synchronization.',
   },
   {
     icon: Users,
     title: 'Agile Team Experience',
-    description: 'Collaborated in an Agile team of 8 developers using Git and GitHub.',
+    description: '1 year in a commercial Agile team (Compuways). Daily standups, Git/GitHub workflows, code reviews, and sprint planning. Shipped features to production, not just internal demos.',
   },
   {
     icon: Server,
     title: 'Backend-Focused',
-    description: 'Strong foundation in Java, Spring Boot, REST APIs, JWT auth and SQL.',
+    description: 'Strongest in Java/Spring Boot: JWT auth, role-based access control, PostgreSQL schema design, RESTful API architecture, and Docker deployment. Can own the backend of a feature from database to API.',
+  },
+  {
+    icon: Sparkles,
+    title: 'AI-Ready',
+    description: 'Using AI tools daily for code generation, debugging, and documentation. Prompt engineering for LLM integrations.',
   },
 ];
 
@@ -34,7 +39,7 @@ const WhatIBring = () => {
           Practical, hireable skills backed by real projects and team experience.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {items.map((item) => (
             <div
               key={item.title}

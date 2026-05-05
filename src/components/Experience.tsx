@@ -9,20 +9,14 @@ const experience: TimelineItem[] = [
   {
     title: 'Software Engineering Intern',
     company: 'Compuways',
-    date: 'July 2024 - August 2025',
-    description: 'Developed and deployed multiple web applications using HTML5, CSS3, JavaScript, Node.js, React, MongoDB, MERN, JAVA, Spring and PostgreSQL. Built responsive, mobile-friendly designs. Integrated RESTful APIs, authentication, and database CRUD functionality. Collaborated using Git, GitHub, and Agile methodologies.',
-  },
-  {
-    title: 'Flexi-crew',
-    company: 'McDonald\'s',
-    date: 'April 2023 - December 2023',
-    description: 'Delivered excellent customer service and trained new team members.',
+    date: 'July 2024 – August 2025',
+    description: 'Built and deployed 4 production web applications with React, Spring Boot, and Node.js. Implemented JWT auth, role-based access control, and REST APIs with MongoDB Atlas and PostgreSQL. Containerized deployments with Docker. Shipped 12 features in an Agile team using Git, code reviews, and sprint planning.',
   },
   {
     title: 'Private Tutor',
     company: 'Self Employed',
-    date: 'March 2022 - May 2023',
-    description: 'Provided tutoring to Grade 9–12 students in Mathematics, Mathematical Literacy, Geography, Computer Applications Technology, English, and Afrikaans. Introduced programming concepts to students.',
+    date: 'March 2022 – May 2023',
+    description: 'Programming & STEM Tutor: Taught Grade 9–12 students Mathematics, Computer Applications Technology, and introductory programming concepts (HTML, CSS, JavaScript basics). Developed custom learning materials and tracked student progress with data-driven assessments.',
   },
 ];
 
@@ -30,20 +24,20 @@ const education: TimelineItem[] = [
   {
     title: 'Java Software Engineering Bootcamp',
     company: 'Code College',
-    date: '2024 - 2025',
-    description: 'Intensive full-stack development program focusing on Java, Spring Boot, React, and modern web technologies. Completed multiple real-world projects and gained expertise in agile development methodologies, database design, and cloud deployment.',
+    date: 'June 2024 – November 2025 (1 year)',
+    description: 'Intensive full-stack program completed while working as a Software Engineering Intern. Focused on Java, Spring Boot, React, and modern web technologies. Built multiple real-world projects with agile methodologies, database design, and cloud deployment.',
   },
   {
     title: 'FNB App Academy Graduate',
     company: 'FNB',
-    date: '2025',
-    description: 'Graduated from an App development bootcamp hosted by FNB covering HTML, CSS, JS, Node.js, Python and Django.',
+    date: '2025 (9 weeks)',
+    description: 'Intensive app development bootcamp covering HTML, CSS, JavaScript, Node.js, Python, and Django. Completed while employed at Compuways — applied learnings directly to production projects.',
   },
   {
-    title: 'Grade 12 - Matric',
+    title: 'Grade 12 — Matric',
     company: 'Nigel Secondary School',
     date: '2020',
-    description: 'Graduated with a Bachelors pass. NQF 4/National Senior Certificate.',
+    description: "Graduated with Bachelor's pass. NQF 4/National Senior Certificate.",
   },
 ];
 
