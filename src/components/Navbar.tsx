@@ -67,7 +67,11 @@ const Navbar = () => {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-foreground/80 hover:text-primary transition-colors font-medium"
+                    className={`transition-colors font-medium ${
+                      activeSection === link.href.slice(1)
+                        ? 'text-primary'
+                        : 'text-foreground/80 hover:text-primary'
+                    }`}
                   >
                     {link.label}
                   </a>
@@ -100,7 +104,11 @@ const Navbar = () => {
                 <a
                   href={link.href}
                   onClick={handleLinkClick}
-                  className="block px-6 py-3 text-foreground/80 hover:text-primary hover:bg-secondary/30 transition-colors font-medium"
+                  className={`block px-6 py-3 hover:bg-secondary/30 transition-colors font-medium ${
+                    activeSection === link.href.slice(1)
+                      ? 'text-primary'
+                      : 'text-foreground/80 hover:text-primary'
+                  }`}
                 >
                   {link.label}
                 </a>
