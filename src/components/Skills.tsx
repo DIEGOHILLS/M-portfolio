@@ -10,11 +10,11 @@ const skillCategories: SkillCategory[] = [
   },
   {
     title: 'Backend',
-    skills: ['Node.js', 'Java', 'Python', 'PostgreSQL', 'MongoDB', 'REST APIs', 'GraphQL'],
+    skills: ['Node.js', 'Java', 'PostgreSQL', 'MongoDB', 'REST APIs', 'GraphQL'],
   },
   {
     title: 'Tools & Technologies',
-    skills: ['Git', 'Docker', 'AWS', 'Vercel', 'Postman', 'Kubernetes', 'Selenium', 'CI/CD'],
+    skills: ['Git', 'Docker', 'AWS', 'Vercel', 'Postman', 'Swagger', 'CI/CD'],
   },
   {
     title: 'Soft Skills',
