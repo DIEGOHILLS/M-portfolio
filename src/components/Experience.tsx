@@ -9,13 +9,13 @@ const experience: TimelineItem[] = [
   {
     title: 'Software Engineering Intern',
     company: 'Compuways',
-    date: 'July 2024 – August 2025',
+    date: 'January 2025 – August 2025',
     description: 'Built and deployed 4 production web applications with React, Spring Boot, and Node.js. Implemented JWT auth, role-based access control, and REST APIs with MongoDB Atlas and PostgreSQL. Containerized deployments with Docker. Shipped 12 features in an Agile team using Git, code reviews, and sprint planning.',
   },
   {
     title: 'Private Tutor',
     company: 'Self Employed',
-    date: 'March 2022 – May 2023',
+    date: 'March 2022 – September 2022',
     description: 'Programming & STEM Tutor: Taught Grade 9–12 students Mathematics, Computer Applications Technology, and introductory programming concepts (HTML, CSS, JavaScript basics). Developed custom learning materials and tracked student progress with data-driven assessments.',
   },
 ];
