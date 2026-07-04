@@ -9,7 +9,7 @@ const experience: TimelineItem[] = [
   {
     title: 'Software Engineering Intern',
     company: 'Compuways',
-    date: 'July 2024 – August 2025',
+    date: 'January 2025 – August 2025',
     description: 'Built and deployed 4 production web applications with React, Spring Boot, and Node.js. Implemented JWT auth, role-based access control, and REST APIs with MongoDB Atlas and PostgreSQL. Containerized deployments with Docker. Shipped 12 features in an Agile team using Git, code reviews, and sprint planning.',
   },
   {
