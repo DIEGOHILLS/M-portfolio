@@ -15,7 +15,7 @@ const experience: TimelineItem[] = [
   {
     title: 'Private Tutor',
     company: 'Self Employed',
-    date: 'March 2022 – May 2023',
+    date: 'March 2022 – September 2022',
     description: 'Programming & STEM Tutor: Taught Grade 9–12 students Mathematics, Computer Applications Technology, and introductory programming concepts (HTML, CSS, JavaScript basics). Developed custom learning materials and tracked student progress with data-driven assessments.',
   },
 ];
