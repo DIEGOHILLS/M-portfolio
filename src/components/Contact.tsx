@@ -45,7 +45,7 @@ const Contact = () => {
             Get In Touch
           </h2>
           <p className="text-foreground/90 max-w-xl mx-auto">
-            Currently open to full-stack and backend engineering roles. Based in Johannesburg, South Africa. Available for remote, hybrid, or on-site.
+            Currently open to full-stack, backend, and QA/testing roles. Based in Johannesburg, South Africa. Available for remote, hybrid, or on-site.
           </p>
         </div>
 

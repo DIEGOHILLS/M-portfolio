@@ -14,7 +14,7 @@ const skillCategories: SkillCategory[] = [
   },
   {
     title: 'Tools & Technologies',
-    skills: ['Git', 'Docker', 'AWS', 'Vercel', 'Postman', 'Swagger', 'CI/CD'],
+    skills: ['Git', 'Docker', 'Vercel', 'Postman', 'Swagger', 'Playwright', 'Manual Testing', 'CI/CD'],
   },
   {
     title: 'Soft Skills',

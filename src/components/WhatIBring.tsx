@@ -1,4 +1,4 @@
-import { Rocket, Radio, Users, Server, Sparkles } from 'lucide-react';
+import { Rocket, Radio, Users, Server, Sparkles, ShieldCheck } from 'lucide-react';
 
 const items = [
   {
@@ -25,6 +25,11 @@ const items = [
     icon: Sparkles,
     title: 'AI-Ready',
     description: 'Using AI tools daily for code generation, debugging, and documentation. Prompt engineering for LLM integrations.',
+  },
+  {
+    icon: ShieldCheck,
+    title: 'Testing & QA',
+    description: 'Comfortable with Playwright for automated testing and manual test case execution. Bridges the gap between building features and verifying they work.',
   },
 ];
 
